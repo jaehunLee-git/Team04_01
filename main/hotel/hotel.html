@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>☕️커피투어 숙소</title>
+  <link rel="stylesheet" href="../css/hotel.css">
+  <link rel="stylesheet" href="../css/fixed_box.css">
+  <link rel="stylesheet" href="../css/Footer.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e305523b80.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- 네비게이션바 -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://honggil-gps.github.io/Team4/"><i class="fa-solid fa-mug-saucer"></i> 커피투어</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user"></i> 마이페이지
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../backend/login.html">로그인</a></li>
+              <li><a class="dropdown-item" href="../backend/sign_in.html">회원가입</a></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../airline/airline.html"><i class="fa-solid fas fa-plane-departure"></i>
+              항공권</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-flag"></i> 투어</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-ticket"></i> 티켓</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-bed"></i> 숙소</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button id="btn" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 오른쪽 픽싱 메뉴 -->
+  <div id="test">
+    <p id="test4"><span style="font-size: 25px;"><strong>278,000원 ~ </strong></span><small style="color: gray;"> 부터</small>
+    </p>
+    <div><button id="test2">예약하기</button></div>
+    <div><button id="test3"><i class="fa-regular fa-heart"></i> 위시리스트 담기</button></div>
+    <div style="font-size: 14px; margin: 7px; color: gray;"><small><center>283명이 이 상품을<br> 위시리스트에 담았습니다.</center></small></div>
+  </div>
+
+  <!-- 호텔 이름 -->
+    <div id="main_div">
+      <br>
+      <center><h1 id="main_title"><strong>하코네 코와키엔 미카와야 료칸</strong></h1></center>
+      <hr>
+      <!-- 부가혜택 -->
+      <p id="semi_title"><i class="fas fa-credit-card"></i><strong> 무료취소</strong> 예약 취소 수수료 없음 (숙박일 24시간 전까지 무료취소 가능)</p>
+      <hr>
+      <p id="semi_title"><i class="fa-solid fa-print"></i><strong> 예약확정서</strong></p>
+      <hr>
+      <!-- 객실사진 -->
+      <div id="wrapper">
+        <img class="box1" src="./img/hotel1.jpg" alt="">
+        <img class="box2" src="./img/hotel2.jpg" alt="">
+        <img class="box2" src="./img/hotel3.jpg" alt="">
+        <img class="box2" src="./img/hotel4.jpg" alt="">
+      </div>
+      
+      <hr>
+      <p id="coment">🅿본 료칸은 모든 객실 내 무료 Wi-Fi 및 무료 주차를 제공합니다. <br>
+        🚢하코네에 위치해 있어 현지 명소 및 관광지와 인접해 있습니다. <br>
+        🏛떠나기 전 유명한 The Hakone Open-Air Museum을 방문해 보세요. <br>
+        ⭐별 3개를 받은 본 고급 숙소는 투숙객에게 숙소 내 레스토랑 및 온천탕을 제공합니다.<br>
+        🏠공식 홈페이지 : <a href="https://go-fujita-kanko.reservation.jp/ko/hotels/fkg027">https://go-fujita-kanko.reservation.jp/ko/hotels/fkg027</a></p>
+        <hr>
+      <!-- 일정선택 -->
+      <h3 id="select_title" style="margin-top: 50px; margin-bottom: 0px;"><strong>🗓 일정 선택</strong></h3>
+      <br>
+      <div id="div1">
+        <b><p>체크인</p></b>
+        <b><p>체크아웃</p></b>
+        <input id="date" type="date" id="pick" name="pick"> 
+        <input id="date" type="date" id="pick" name="pick">
+      </div>
+
+      <!-- 인원선택 -->
+      <h3 id="select_title" style="margin-top: 50px; margin-bottom: 0px;"><strong>👤 인원 선택</strong></h3><br>
+      
+      <div id="div2">
+        <b><p>성인</p></b>
+        <b><p>어린이</p></b>
+        <select name="person" id="person" >
+          <option value="" selected disabled hidden>인원을 선택해주세요</option>
+          <option value="1">1명</option>
+          <option value="2">2명</option>
+          <option value="3">3명</option>
+          <option value="4">4명</option>
+        </select>
+  
+        <select name="person" id="person" >
+          <option value="" selected disabled hidden>인원을 선택해주세요</option>
+          <option value="1">1명</option>
+          <option value="2">2명</option>
+          <option value="3">3명</option>
+          <option value="4">4명</option>
+        </select>
+      </div>
+      <br>
+
+      <!-- 객실선택 -->
+      <h3 id="select_title" style="margin-top: 50px; margin-bottom: 0px;"><strong>🛏 객실 선택</strong></h3><br>
+        <select name="room" id="room" >
+          <option value="" selected disabled hidden>객실을 선택해주세요</option>
+          <option value="1">스탠다드룸</option>
+          <option value="3">일본식룸</option>
+          <option value="4">트윈룸</option>
+          <option value="6">스위트룸</option>
+        </select>
+        <br>
+
+        <!-- 객실타입 -->
+        <hr>
+        <div id="roomtype">
+          <img class="roomtype1" src="./img/hotel5.jpg" alt="">
+          <center><a><h4>스탠다드룸</h4><br><p>최대인원 : 4인</p><p>싱글베드 2개, 요이불 2개</p><p>객실크기 : 30m²</p><p>조식포함</p></a></center>
+        </div>
+        <hr>
+        <div id="roomtype">
+          <img class="roomtype1" src="./img/hotel6.jpg" alt="">
+          <center><a><h4>일본식룸</h4><br><p>최대인원 : 6인</p><p>요이불 6개</p><p>객실크기 : 38m²</p><p>조식포함</p></a></center>
+        </div>
+        <hr>
+        <div id="roomtype">
+          <img class="roomtype1" src="./img/hotel7.jpg" alt="">
+          <center><a><h4>트윈룸</h4><br><p>최대인원 : 4인</p><p>싱글베드 2개, 요이불 2개</p><p>객실크기 : 40m²</p><p>조식포함</p></a></center>
+        </div>
+        <hr>
+        <div id="roomtype">
+          <img class="roomtype1" src="./img/hotel8.jpg" alt="">
+          <center><a><h4>스위트룸</h4><br><p>최대인원 : 6인</p><p>더블베드 2개, 요이불 4개</p><p>객실크기 : 52m²</p><p>조식포함</p></a></center>
+        </div>
+        <hr>
+        </div>
+</body>
+
+<!-- footer -->
+<footer id="footer_text" class="footer">
+  <secton class="footer-inner">
+      <span class="CustomerCenter-module__container ">
+              <p >상호명 (주) |커피트립 대표 이홍길 | 개인정보보호책임자 권아진 | 사업자등록번호 209-12-12345 사업자정보확인 |</p>
+              <p>| 통신판매업신고번호 2024-부산남구-0510|관광사업등록번호: 제2019-3호</p>
+              <p >주소 부산광역시 남구 대연동 부경대학교 창의관 3층|이메일 dustkscjswo@naver.com|마케팅 문의 |duddjcjswo@naver.com</p>
+              <p >제휴 문의 travel@naver.com</p>
+          </span>
+              <span class="CustomerCenter-module__container2">
+              <p>자사는 부경대학교 디지털스마트부산 아카데미 4기입니다</p>
+              <p>여행보증보험:1.5억원/기획여행보증:2억원</p>
+              <p>여행가조는 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품, 거래정보 및 거래에 대한 책임을 지지않습니다.</p>
+              <p>부득이한 사정에 의해 확정된 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.  
+              </p>
+      </span>
+  </secton>
+</footer>
+</html>

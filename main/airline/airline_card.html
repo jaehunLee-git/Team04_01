@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나라별 항공권 선택</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/Footer.css">
+  <link rel="stylesheet" href="../css/tokyo_hotel.css">
+  <link rel="stylesheet" href="../css/row_scroll.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e305523b80.js" crossorigin="anonymous"></script>
+  <style>
+    #title {
+    text-align: center; /* 중앙 정렬 */
+  }
+
+  #title_img {
+    max-width: 100%; /* 이미지가 부모 요소 너비를 넘지 않도록 설정 */
+    height: auto; /* 가로 세로 비율 유지 */
+  }
+
+  @media (max-width: 28.125rem) {
+  #title_img {
+    max-width: 100%; /* 작은 화면에서 이미지가 부모 요소의 80%를 차지하도록 설정 */
+    height: auto;
+  }
+  .tokyo {
+    font-size: 100%; /* 작은 화면에서 폰트 크기를 더 작게 설정 */
+  }
+  #menu {
+    max-width : 80%;
+    display: left;
+  }
+  }
+  </style>
+</head>
+<body>
+  <!-- 네비게이션바 -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://honggil-gps.github.io/Team4/"><i class="fa-solid fa-mug-saucer"></i> 커피투어</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user"></i> 마이페이지
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../backend/login.html">로그인</a></li>
+              <li><a class="dropdown-item" href="../backend/sign_in.html">회원가입</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../airline/airline.html"><i class="fa-solid fas fa-plane-departure"></i>
+              항공권</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-flag"></i> 투어</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-ticket"></i> 티켓</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-bed"></i> 숙소</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button id="btn" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <h3 id="main_card1_title" style="margin-top: 50px; margin-bottom: 0px;"><strong>✈️ 초특가 항공권</strong></h3>
+  <div id="main_card1" class="horizontal-scroll-container">
+    <div class="card" style="width: 18rem;">
+      <img class="card_img" src="./img/미국.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">[미국]뉴욕</h5>
+        <p class="card-text">723,700원</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card_img" src="./img/취리히.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">[스위스]취리히</h5>
+        <p class="card-text">151,300원</p>
+      </div>
+    </div>
+  
+    <a id="main_card1_text" href="../airline/airline.html">
+      <div class="card" style="width: 18rem;">
+        <img class="card_img" src="../airline/img/airline_card3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">[일본]오사카</h5>
+          <p class="card-text">278,000원</p>
+        </div>
+      </div>
+    </a>
+  
+    <div class="card" style="width: 18rem;">
+      <img class="card_img" src="./img/헝가리.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">[헝가리]부다페스트</h5>
+        <p class="card-text">674,500원</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- footer -->
+<footer class="footer">
+  <secton class="footer-inner">
+      <span class="CustomerCenter-module__container ">
+              <p >상호명 (주) |커피트립 대표 이홍길 | 개인정보보호책임자 권아진 | 사업자등록번호 209-12-12345 사업자정보확인 |</p>
+              <p>| 통신판매업신고번호 2024-부산남구-0510|관광사업등록번호: 제2019-3호</p>
+              <p >주소 부산광역시 남구 대연동 부경대학교 창의관 3층|이메일 dustkscjswo@naver.com|마케팅 문의 |duddjcjswo@naver.com</p>
+              <p >제휴 문의 travel@naver.com</p>
+          </span>
+              <span class="CustomerCenter-module__container2">
+              <p>자사는 부경대학교 디지털스마트부산 아카데미 4기입니다</p>
+              <p>여행보증보험:1.5억원/기획여행보증:2억원</p>
+              <p>여행가조는 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품, 거래정보 및 거래에 대한 책임을 지지않습니다.</p>
+              <p>부득이한 사정에 의해 확정된 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.  
+              </p>
+      </span>
+  </secton>
+</footer>
+</body>
+</html>

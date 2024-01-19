@@ -1,0 +1,125 @@
+.container1{
+    display: flex;
+    background-color: skyblue;
+    margin: 0rem;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  #airline_search_bar{
+    justify-content: center;
+    width: 100vw;
+  }
+  .box1, .box2, .box3, .box4{
+    height: 3rem;
+    margin: .5rem;
+    padding: 0.7rem;
+    background-color: white;
+    border-radius: 30px;
+  }
+  .box1{
+    width: 15rem;
+  }
+  .box2{
+    width: 25rem;
+  }
+  .box3{
+    width: 20rem;
+    position: relative;
+  }
+  .box3 p{
+    text-align: center
+    ;
+  }
+
+  .box4{
+    width: 20rem;
+    background-color: rgb(129, 239, 202);
+  }
+  .box4:hover{
+    background-color: aqua;
+  }
+  #airline_search{
+    border: none;
+    background-color: rgb(129,239,202);
+    font-size: larger;
+  }
+  p{
+    text-align: center;
+    /* color: black; */
+  }
+  #wrapper{
+    display:grid;
+    grid-template-columns:repeat;
+    justify-content: center;
+  }
+  .foreign_wrap {
+    background-color:#fff;
+    box-shadow:0rem .0625rem .3125rem #222;
+    border-radius: 1.25rem;
+    width: 90vw;
+    height: 20vw;
+    float: center;
+    margin: .625rem;
+
+  }
+  .foreign_list{
+    padding: 5rem;
+  }
+  .korea_airlines img{
+    width: 6.25rem;
+    height: auto;
+    padding: 1rem;
+  } 
+  #test {
+    width: 18.75rem;
+    height: 9.375rem;
+    border: .125rem solid gainsboro;
+    position: relative;
+    border-radius: .625rem;
+    padding: .3125rem;
+    float: right;
+  }
+  #test2 {
+          background-color: skyblue;
+          color: white;
+          width: 16.25rem;
+          height: 3.125rem;
+          margin: .625rem;
+          border-radius: .3125rem;
+          border: none;
+  }
+#test4 {
+          margin: .625rem;
+  }
+  .list{
+    font-size: larger;
+  }
+
+@media (max-width: 28.125rem){
+    .box1, .box2, .box3{
+        display: none;
+    }
+    .box4{
+        width: 80vw;
+        font-size: 1rem;
+    }
+    .box4:hover{
+        height: 20rem;
+    }
+    .list{
+        font-size: 0.75rem;
+    }
+    .foreign_wrap{
+        width: 90vw;
+        height: 80vw;
+    }
+    .foreign_list{
+      padding: 2em;
+    }
+    .korea_airlines img{
+      width: 5rem;
+      height: auto;
+    }
+    
+    
+    }

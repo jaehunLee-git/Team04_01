@@ -1,0 +1,16 @@
+#FanQ_logo{
+    position: fixed;
+    right: 4em;
+    bottom: 4em;
+    z-index:1
+}
+#FanQ_logo_btn{
+    border: 0em;
+    background-color: transparent;
+}
+
+@media (max-width: 28.5rem){
+    #FanQ_logo{
+        display: none;
+    }
+}

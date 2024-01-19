@@ -1,0 +1,13 @@
+/* 가로 스크롤을 감싸는 컨테이너에 스타일을 지정합니다. */
+.horizontal-scroll-container {
+    display: flex; /* 가로로 나열하기 위해 flex 속성을 추가합니다. */
+    overflow-x: auto;
+}
+/* 각 항목의 스타일을 지정합니다. */
+.card {
+    flex: auto; /* 크기가 자동으로 조절되지 않도록 고정합니다. */
+    margin-right: .625rem; /* 각 항목 사이의 간격을 조절합니다. */
+}
+.card:last-child {
+    margin-right: 0; /* 마지막 항목은 간격을 없앱니다. */
+}

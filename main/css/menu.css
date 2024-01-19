@@ -1,0 +1,18 @@
+#menu {
+    display: flex;
+    justify-content: center;
+}
+
+/* 각 메뉴 아이템의 스타일 */
+#menu>div {
+    text-align: center;
+    margin: 0 .625rem;
+    /* 각 아이템 간의 여백 설정 */
+}
+
+/* 아이콘 및 텍스트의 스타일 */
+#menu_text {
+    display: block;
+    text-decoration: none;
+    color: black;
+}

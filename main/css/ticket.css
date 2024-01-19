@@ -1,0 +1,149 @@
+#main_div{
+  width: 62.5rem;
+  margin: auto;
+}
+
+hr{
+  width: 54.375rem;
+}
+
+#wrapper{
+  display:grid;
+  grid-template-columns:repeat(3, 17.9375rem);  /* 너비 12.5rem인 칼럼 3개 */
+  grid-template-rows: minmax(6.25rem, auto);  
+  grid-gap:.3125rem .3125rem;  /* 칼럼 간격 1.875rem, 줄 간격 1.25rem  */
+}
+
+.box1 {
+  grid-column: 1/4;
+  width: 54.375rem;
+  height: 31.25rem;
+  border-radius: 1%;
+}
+.box2 {
+  width: 17.9375rem;
+  border-radius: 1%;
+}
+.box3 {
+  width: 16.875rem;
+  height: 10.5rem;
+  filter: blur(.125rem);
+}
+
+#div1 {
+  display: grid;
+  grid-template-columns: 18.75rem 18.75rem;
+  margin: .625rem;
+}
+
+#div2 {
+  display: grid;
+  grid-template-columns: 18.75rem 18.75rem;
+  margin: .625rem;
+}
+
+#person{
+  margin: 0rem 3.125rem 0rem 0rem;
+}
+
+div > input {
+  margin-right: 1.875rem;
+  height: 3.125rem;
+  width: 12.5rem;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired transparency */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 1.5rem; /* Adjust the font size as needed */
+}
+@media (max-width: 28.125rem) {
+  * {
+    font-size: 13px;
+    max-width: 26.5625rem;
+  }
+
+  hr {
+    max-width: 26.5625rem;
+  }
+
+  #main_div {
+    max-width: 26.5625rem;
+    max-height: 26.5625rem;
+  }
+
+  #nav {
+    max-width: 26.5625rem;
+    max-height: 26.5625rem;
+  }
+
+  #wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 5.8125rem);
+    /* 너비 200px인 칼럼 3개 */
+    grid-template-rows: minmax(6.25rem, auto);
+    grid-gap: 0.3125rem 0.3125rem;
+    /* 칼럼 간격 30px, 줄 간격 20px  */
+  }
+
+  .box1 {
+    max-width: 26.5625rem;
+    max-height: 12.5rem;
+  }
+
+  .box2, .box3, .overlay, #test{
+    display: none;
+  }
+
+  #div1 {
+    width: 26.5625rem;
+    display: grid;
+    grid-template-columns: 10.75rem 10.75rem;
+    margin: .625rem;
+  }
+
+  #div1 b {
+    width: 10rem;
+  }
+
+  #div1 #date {
+    width: 10rem;
+    float: left;
+    overflow: hidden;
+  }
+
+  #div2 {
+    width: 26.5625rem;
+    display: grid;
+    grid-template-columns: 10.75rem 10.75rem;
+    margin: .625rem;
+  }
+
+  #person{
+    font-size: 8px;
+  }
+  .footer{
+    position:relative;
+    top: 1050px;
+    font-size: 1px;
+  }
+
+}

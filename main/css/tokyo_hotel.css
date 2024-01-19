@@ -1,0 +1,77 @@
+#title_img{
+  width: 100%;
+}
+
+#title {
+  position: relative;
+}
+.tokyo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+  color: white;
+  font-weight: 600;
+  font-size:5rem;
+}
+
+#menu {
+  width: 62.5rem;
+  display: grid;
+  grid-template-columns:repeat(4, auto); 
+  margin: 1.875rem;
+  font-size: 1.25rem;
+}
+.menu_icon_tour{
+  width: 3.125rem;
+  margin: 1.0625rem;
+
+}
+
+#menu_hotel{
+  text-decoration-line: none;
+  color: black;
+  margin-bottom: 1.25rem;
+}
+
+#hotel_line{
+  width: 9.375rem;
+  border: 0;
+  height: .375rem;
+  margin-top: px;
+}
+
+#menu_text, #main_card1_text{
+  text-decoration-line: none;
+  color: black;
+  color: inherit;
+}
+
+.menu_icon{
+  width: 4.375rem;
+  margin: .375rem;
+}
+
+#line1, #line2{
+  width: 95%;
+  margin-left: 2.5rem;
+}
+#main_card1_title{
+  margin-left: 5%;
+}
+
+#main_card1{
+  display: grid;
+  grid-template-columns:repeat(4, auto); 
+  margin: 1.875rem;
+}
+
+.card{
+  margin: auto;
+}
+
+.card_img{
+  height: 12.5rem;
+  border-radius: 2%;
+
+}

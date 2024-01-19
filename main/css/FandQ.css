@@ -1,0 +1,104 @@
+.banner {
+    background-image: url(//theme.zdassets.com/theme_assets/10313248/bbf7aaa….png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.blocks-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+}
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 5%;
+    margin-top: 60px;
+}
+
+@media  (min-width: 768px){
+
+}
+
+.blocks-item {
+    border: 0px solid ;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: black;
+    /* display: flex; */
+    flex: 1 0 340px;
+    margin: 0 0 30px;
+    max-width: 100%;
+    /* text-align: center; */
+}
+
+li {
+    display: list-item;
+    list-style: none;
+    text-align: -webkit-match-parent;
+}
+.blocks-list h3{
+    font-style : inherit;
+    font-weight: bold;
+    color: rgb(61, 183, 204);
+}
+.intro-title {
+    margin-bottom: 2.25rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.hero-inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 610px;
+    margin: 0 auto;
+}
+
+.hero{
+    background-image: url(/Team4/main/backend/backend_img/FandQ_bg_img2.webp);
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    padding: 0 1.25rem;
+    text-align: center;
+    width: 100%;
+}
+
+
+.hero-inner h2{
+    margin-bottom: 2.25rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+section {
+    display: block;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+.search input[type="search"] {
+    padding: 0 3.4375rem !important;
+    height: 3rem;
+    border: none !important;
+    border-radius: .25rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 .0625rem .25rem 0 rgba(52, 58, 64, 0.15), 0 0 .0625rem 0 rgba(52, 58, 64, 0.2);
+    font-size: .9375rem !important;
+    font-weight: inherit;
+    width: 70%;
+}

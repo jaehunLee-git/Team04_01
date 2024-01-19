@@ -1,0 +1,14 @@
+#btn{
+  color: #3c3c3c;
+  background-color: rgb(242, 242, 242);
+  border-color: #3c3c3c;
+}
+
+#btn:hover{
+  background-color: #c6ddea;
+}
+
+#btn:active{
+  background-color: #3885b1;
+}
+

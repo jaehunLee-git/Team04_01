@@ -1,0 +1,31 @@
+#test {
+  width: 250px;
+  height: 260px;
+  border: .125rem solid gainsboro;
+  position: fixed;
+  top: 3.75rem;
+  right: 0;
+  border-radius: .625rem;
+  padding: .3125rem;
+}
+#test2 {
+  background-color: skyblue;
+  color: white;
+  width: 217px;
+  height: 3.125rem;
+  margin: .625rem;
+  border-radius: .3125rem;
+  border: none;
+}
+#test3 {
+  background-color: white;
+  color: black;
+  width: 217px;
+  height: 3.125rem;
+  margin: .625rem;
+  border-radius: .3125rem;
+  border: .0625rem solid;
+}
+#test4 {
+  margin: .625rem;
+}

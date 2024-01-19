@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☕️커피투어 투어</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/tour.css">
+    <!--link rel="stylesheet" href="../css/hotel.css"-->
+    <link rel="stylesheet" href="../css/fixed_box.css">
+    <link rel="stylesheet" href="../css/Footer.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e305523b80.js" crossorigin="anonymous"></script>
+    <style>
+        @media (max-width : 28.125rem) {
+            #test {
+                display: none;
+            }
+            body {
+                max-width: 26.5625rem;
+            }
+            hr {
+                max-width: 26.5625rem;
+            }
+            #nav {
+                max-width: 26.5625rem;
+            }
+            #main_div {
+                max-width: 26.5625rem;
+            }
+            #main_title {
+                font-size: 1.5625rem;
+                text-align: left;
+                margin-left: 2.5rem;
+            }
+            #semi_title {
+                font-size: .9375rem;
+                margin: 0rem 0rem 0rem .3125rem;
+            }
+            #coment {
+                max-width: 26.5625rem;
+                font-size: .875rem;
+                margin: 0rem .3125rem 0rem .3125rem;
+            }
+            #wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 138px);
+                /* 너비 200px인 칼럼 3개 */
+                grid-gap: .3125rem .3125rem;
+                /* 칼럼 간격 30px, 줄 간격 20px  */
+            }
+            .box1 {
+                max-width: 26.5625rem;
+                max-height: 16.875rem;
+            }
+            .box2 {
+                max-width: 8.625rem;
+                max-height: 50;
+            }
+            p {
+                font-size: .9375rem;
+            }
+            #select_title {
+                font-size: 1.4375rem;
+            }
+            #date,
+            #person,
+            #room {
+                font-size: .9375rem;
+            }
+            #person {
+                margin: 0rem .3125rem 0rem .3125rem;
+            }
+            #div1 {
+                width: 26.5625rem;
+                display: grid;
+                grid-template-columns: 10.75rem 10.75rem;
+                margin: .625rem;
+            }
+            #div1 b {
+                width: 10rem;
+            }
+            #div1 #date {
+                width: 10rem;
+                float: left;
+                overflow: hidden;
+            }
+            #div2 {
+                width: 26.5625rem;
+                display: grid;
+                grid-template-columns: 10.75rem 10.75rem;
+                margin: .625rem;
+            }
+            #roomtype {
+                max-width: 26.5625rem;
+                display: grid;
+                grid-template-columns: repeat(1, 26.5625rem);
+            }
+            .roomtype1 {
+                max-width: 26.5625rem;
+                font-size: small;
+                margin-left: .8125rem;
+            }
+            #roomtype h4 {
+                font-size: 1.0625rem;
+                margin-top: .625rem;
+            }
+            #roomtype p {
+                font-size: .8125rem;
+            }
+            #footer_text p {
+                font-size: .5625rem;
+                margin: .1875rem .25rem .1875rem .25rem;
+            }
+            .tourimg {
+                max-width: 25rem;
+                height: auto;
+            }
+            .tourlist a {
+                width: 28.125rem;
+                font-size: small;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 네비게이션바 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://honggil-gps.github.io/Team4/"><i class="fa-solid fa-mug-saucer"></i>
+                커피투어</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fas fa-user"></i> 마이페이지
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../backend/login.html">로그인</a></li>
+                            <li><a class="dropdown-item" href="../backend/sign_in.html">회원가입</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../airline/airline.html"><i
+                                class="fa-solid fas fa-plane-departure"></i>
+                            항공권</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-flag"></i> 투어</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-ticket"></i> 티켓</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-bed"></i> 숙소</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="btn" class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 오른쪽 픽싱 메뉴 -->
+    <div id="test">
+        <p id="test4"><span style="font-size: 25px;"><strong>99,000원 ~ </strong></span><small style="color: gray;">
+                부터</small>
+        </p>
+        <div><button id="test2">예약하기</button></div>
+        <div><button id="test3"><i class="fa-regular fa-heart"></i> 위시리스트 담기</button></div>
+        <div style="font-size: 14px; margin: 7px; color: gray;"><small>
+                <center>392명이 이 상품을 <br>위시리스트에 담았습니다.</center>
+            </small></div>
+    </div>
+
+    <!-- 투어 이름 -->
+    <div id="main_div">
+        <br>
+        <center>
+            <h1 id="tourname"><strong>도쿄, 근방 자유여행지 투어</strong></h1>
+        </center>
+        <hr>
+        <!-- 부가혜택 -->
+        <p><i class="fas fa-credit-card"></i><strong> 무료취소</strong> 예약 취소 수수료 없음 (출발일 24시간 전까지 무료취소 가능)</p>
+        <hr>
+        <p><i class="fa-solid fa-print"></i><strong> 예약확정서</strong></p>
+        <hr>
+        <!-- 투어사진 -->
+        <div id="wrapper">
+            <img class="box1" src="./img/tokyo_tower.jpg" alt="">
+            <img class="box2" src="./img/sinsa2.png" alt="">
+            <img class="box2" src="./img/shinjuku.png" alt="">
+            <img class="box2" src="./img/narai.webp" alt="">
+        </div>
+
+        <hr>
+        <p>🌟 본 여행 상품은 여행지에서 하차 후 자유롭게 여행이 가능한img 자유 여행 상품입니다. <br>
+            🎤 여행 안내원은 각 관강지에 대한 설명을 차량 내에서 안내합니다. <br>
+            🚶 하차하신 후에는 온전히 자유롭게 여행을 하실 수 있습니다. <br>
+            🗺️ 본 상품은 날씨 상황에 따라 이동 가능한 관광지가 변경될 수 있습니다.<br>
+            👨‍👩‍👧 쾌적한 환경을 위하여 만 5세 이상부터 탑승 가능합니다. </p>
+        <hr>
+        <!-- 일정선택 -->
+        <h3 style="margin-top: 50px; margin-bottom: 0px;"><strong>🗓 일정 선택</strong></h3>
+        <br>
+        <div id="div1">
+            <b>
+                <p>투어 시작일</p>
+            </b>
+            <b>
+                <p>투어 종료일</p>
+            </b>
+            <input id="date" type="date" id="pick" name="pick">
+            <input id="date" type="date" id="pick" name="pick">
+        </div>
+
+        <!-- 인원선택 -->
+        <h3 style="margin-top: 50px; margin-bottom: 0px;"><strong>👤 인원 선택</strong></h3><br>
+        <div id="div2">
+            <b>
+                <p>성인 (만 18세 이상)</p>
+            </b>
+            <b>
+                <p>어린이 (5세 이상)</p>
+            </b>
+            <select name="person" id="person">
+                <option value="" selected disabled hidden>인원을 선택해주세요</option>
+                <option value="1">1명</option>
+                <option value="2">2명</option>
+                <option value="3">3명</option>
+                <option value="4">4명</option>
+            </select>
+
+            <select name="person" id="person">
+                <option value="" selected disabled hidden>인원을 선택해주세요</option>
+                <option value="1">1명</option>
+                <option value="2">2명</option>
+                <option value="3">3명</option>
+                <option value="4">4명</option>
+            </select>
+        </div>
+        <br>
+
+        <!-- 여행지 선택 -->
+        <h3 style="margin-top: 50px; margin-bottom: 0px;"><strong>🌎투어 선택🌏</strong></h3><br>
+        <select name="room" id="room">
+            <option value="" selected disabled hidden>투어를 선택해주세요</option>
+            <option value="1">시즈오카</option>
+            <option value="3">야마나시</option>
+            <option value="4">하코네</option>
+            <option value="6">도쿄</option>
+        </select>
+        <br>
+
+        <!-- 여행소개 -->
+        <hr>
+        <div id="tourlist">
+            <img class="tourimg" src="./img/shizoka.png" alt="">
+            <a>
+                <h4>시즈오카</h4><br>
+                <h5>고텐바 프리미엄 아울렛</h5>
+                <p>후지산이 보이는 일본 최대의 아울렛에서</p>
+                <p>쇼핑을 즐기실 수 있습니다.</p>
+                <p>쇼핑을 원하지 않으시는 분들은 온천이용도 가능합니다.</p>
+            </a>
+        </div>
+        <hr>
+        <div id="tourlist">
+            <img class="tourimg" src="./img/hakone.png" alt="">
+            <a>
+                <h4>하코네</h4>
+                <h5>하코네 신사</h5>
+                <p>모토 하코네 항에서 상점가를 따라 걸으면 하코네 신사의 시작인 토리이문이 보입니다.</p>
+                <h5>쿠즈류 신사</h5>
+                <p>하코네 신사 옆에 있는 아홉 마리 용의 머리 입에서 물이 흐르는 분수가 인상적입니다.</p>
+                <h5>평화의 토리이</h5>
+                <p>신사를 지나 호숫가로 걸어가게 되면 토리이 평화의 문을 발견할 수 있습니다,</p>
+                <h5>아시노 호</h5>
+                <p>맑은 날이면 웅장한 후지산의 전망을 즐길 수 있는 곳입니다.</p>
+            </a>
+        </div>
+        <hr>
+        <div id="tourlist">
+            <img class="tourimg" src="./img/yamanashi.png" alt="">
+            <a>
+                <h4>야마나시</h4>
+                <h5>오시노 핫카이</h5>
+                <p>오시노 핫카이는 후지산의 모습을 바라볼 수 있는 8곳의 용수지 입니다.</p>
+                <h5>오이시 공원</h5>
+                <p>오이시 공원은 후지산과 가와구치호수의 절경을 즐길 수 있는 장소입니다. </p>
+            </a>
+        </div>
+        <hr>
+        <div id="tourlist">
+            <img class="tourimg" src="./img/tokyo2.png" alt="">
+            <a>
+                <h4>도쿄</h4>
+                <h5>도쿄타워</h5>
+                <p>1058년에 개업한 도쿄 타워는 그 아름다운 모습으로 지금도 인기가 많은 명소입니다. 롯폰기나 도라노몬 등의 번화가에서도 가깝습니다.</p>
+                <h5>센소지 절</h5>
+                <p>유명한 가미나리몬 문을 지나면 가게가 빼곡히 줄지어 있는 나카미세 거리가 나옵니다. 절 경내에 들어서면 장엄한 건물에 압도될 것입니다.</p>
+                <h5>스카이트리</h5>
+                <p>맑은 날에는 덴보 데크에서 사방으로 한없이 펼쳐지는 풍경을 즐길 수 있습니다.</p>
+                <h5>긴자</h5>
+                <p>긴자는 예나 지금이나 도쿄 제일의 세련되고 럭셔리한 거리입니다. 최고의 쇼핑과 식사를 경험해 보시기 바랍니다.</p>
+            </a>
+        </div>
+        <hr>
+    </div>
+</body>
+
+<!-- footer -->
+<footer class="footer">
+    <secton class="footer-inner">
+        <span class="CustomerCenter-module__container ">
+            <p>상호명 (주) |커피트립 대표 이홍길 | 개인정보보호책임자 권아진 | 사업자등록번호 209-12-12345 사업자정보확인 |</p>
+            <p>| 통신판매업신고번호 2024-부산남구-0510|관광사업등록번호: 제2019-3호</p>
+            <p>주소 부산광역시 남구 대연동 부경대학교 창의관 3층|이메일 dustkscjswo@naver.com|마케팅 문의 |duddjcjswo@naver.com</p>
+            <p>제휴 문의 travel@naver.com</p>
+        </span>
+        <span class="CustomerCenter-module__container2">
+            <p>자사는 부경대학교 디지털스마트부산 아카데미 4기입니다</p>
+            <p>여행보증보험:1.5억원/기획여행보증:2억원</p>
+            <p>여행가조는 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품, 거래정보 및 거래에 대한 책임을 지지않습니다.</p>
+            <p>부득이한 사정에 의해 확정된 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.
+            </p>
+        </span>
+    </secton>
+</footer>
+
+</html>

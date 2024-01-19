@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>☕️커피투어</title>
+  <link rel="stylesheet" href="main/css/index.css">
+  <link rel="stylesheet" href="main/css/navbar.css">
+  <link rel="stylesheet" href="main/css/Footer.css">
+  <link rel="stylesheet" href="main/css/FanQ_logo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e305523b80.js" crossorigin="anonymous"></script>
+
+  <style>
+    .carousel-inner {
+      overflow: hidden;
+      margin: auto;
+      border-radius: 0.625rem;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .carousel-item {
+      height: 100%;
+    }
+
+    @media (max-width: 28.125rem) {
+      #main_div {
+        width: 425px;
+        height: auto;
+      }
+
+      .carousel-item img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+      }
+
+      .strong {
+        color: white;
+        font-size: small;
+        z-index: 100;
+        display: grid;
+      }
+
+      .d-flex {
+        flex-wrap: nowrap;
+        /* 요소들이 가로로 나열되도록 함 */
+      }
+
+      .card {
+        flex: 0 0 auto;
+        /* flex-grow, flex-shrink, flex-basis 설정 */
+        width: 18rem;
+        /* 가로 크기 고정 */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 네비게이션바 -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://honggil-gps.github.io/Team4/"><i class="fa-solid fa-mug-saucer"></i>
+        커피투어</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user"></i> 마이페이지
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="main/backend/login.html">로그인</a></li>
+              <li><a class="dropdown-item" href="main/backend/sign_in.html">회원가입</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./main/airline/airline.html"><i
+                class="fa-solid fas fa-plane-departure"></i>
+              항공권</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-flag"></i> 투어</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-ticket"></i> 티켓</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-bed"></i> 숙소</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button id="btn" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 상담페이지 연결 버튼-->
+  <div id="FanQ_logo">
+    <div>
+      <button id="FanQ_logo_btn">
+        <a href="./main/backend/FandQ.html">
+          <img src="./main/backend/backend_img/FanQ_logo.jpg" alt="FanQ_logo">
+        </a>
+      </button>
+    </div>
+  </div>
+
+  <div id="main_div">
+    <h1 style="margin-bottom: 1.875rem; margin-top: 1.875rem;"><strong>여행이 돌아왔어요!</strong></h1>
+    <div class="container">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active position-relative">
+            <a href="main/ticket/ticket.html"><img style="height: 25rem;" src="main/ticket/img/skytree1.jpg"
+                class="d-block w-100" alt="..."></a>
+            <div class="carousel-caption position-absolute top-0 start-50 translate-middle-x text-center"">
+              <h5><strong>[즉시확정] <br>도쿄 스카이트리 전망대 & 스미다 수족관 입장권</strong></h5>
+              <p>1월 한정 특가 할인!</p>
+            </div>
+          </div>
+
+          <div class=" carousel-item">
+              <img style="height: 25rem;" src="main/card/img/tour_card1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption position-absolute top-0 start-50 translate-middle-x text-center">
+                <h5><strong>[후지산/온천]<br>후지산 투어와 온천체험</strong></h5>
+                <p>1월 한정 특가 할인!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img style="height: 25rem;" src="main/card/img/tour_card4.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption position-absolute top-0 start-50 translate-middle-x text-center">
+                <h5><strong>[도쿄]<br>도쿄 드라이브 ~ 공항 픽업 & 도쿄 intro & 자유여행</strong></h5>
+                <p>1월 한정 특가 할인!</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="d-flex justify-content-start overflow-x-auto">
+        <!-- 도쿄 -->
+        <div class="card" style="width: 18rem; margin-right: 10px;">
+          <img style="height: 15rem;" src="main/card/img/main_card1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">도쿄</h5>
+            <p class="card-text">일본 최대 도시 도쿄<br>310여 개의 여행 상품</p>
+            <a href="main/backend/tokyo_page.html" class="btn btn-primary">둘러보기</a>
+          </div>
+        </div>
+
+        <!-- 파리 -->
+        <div class="card" style="width: 18rem;">
+          <img style="height: 15rem;" src="main/card/img/main_card2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">파리</h5>
+            <p class="card-text">문화와 낭만의 도시 파리<br>120여 개의 여행 상품</p>
+            <a href="#" class="btn btn-primary">둘러보기</a>
+          </div>
+        </div>
+
+        <!-- 피렌체 -->
+        <div class="card" style="width: 18rem;">
+          <img style="height: 15rem;" src="main/card/img/main_card3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">피렌체</h5>
+            <p class="card-text">예술, 역사로 가득한 피렌체<br>51여 개의 여행 상품</p>
+            <a href="#" class="btn btn-primary">둘러보기</a>
+          </div>
+        </div>
+
+        <!-- 부다페스트 -->
+        <div class="card" style="width: 18rem;">
+          <img style="height: 15rem;" src="main/card/img/main_card4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">부다페스트</h5>
+            <p class="card-text">유럽 3대 야경 부다페스트<br>99여 개의 여행 상품</p>
+            <a href="#" class="btn btn-primary">둘러보기</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</body>
+<footer class="footer">
+  <secton class="footer-inner">
+    <span class="CustomerCenter-module__container ">
+      <p>상호명 (주) |커피트립 대표 이홍길 | 개인정보보호책임자 권아진 | 사업자등록번호 209-12-12345 사업자정보확인 |</p>
+      <p>| 통신판매업신고번호 2024-부산남구-0510|관광사업등록번호: 제2019-3호</p>
+      <p>주소 부산광역시 남구 대연동 부경대학교 창의관 3층|이메일 dustkscjswo@naver.com|마케팅 문의 |duddjcjswo@naver.com</p>
+      <p>제휴 문의 travel@naver.com</p>
+    </span>
+    <span class="CustomerCenter-module__container2">
+      <p>자사는 부경대학교 디지털스마트부산 아카데미 4기입니다</p>
+      <p>여행보증보험:1.5억원/기획여행보증:2억원</p>
+      <p>여행가조는 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품, 거래정보 및 거래에 대한 책임을 지지않습니다.</p>
+      <p>부득이한 사정에 의해 확정된 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.
+      </p>
+    </span>
+  </secton>
+</footer>
+
+</html>

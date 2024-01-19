@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>☕️커피투어 티켓</title>
+  <link rel="stylesheet" href="../css/fixed_box.css">
+  <link rel="stylesheet" href="../css/ticket.css">
+  <link rel="stylesheet" href="../css/Footer.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e305523b80.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- 네비게이션바 -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://honggil-gps.github.io/Team4/"><i class="fa-solid fa-mug-saucer"></i> 커피투어</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user"></i> 마이페이지
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../backend/login.html">로그인</a></li>
+              <li><a class="dropdown-item" href="../backend/sign_in.html">회원가입</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../airline/airline.html"><i class="fa-solid fas fa-plane-departure"></i>
+              항공권</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-flag"></i> 투어</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-ticket"></i> 티켓</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../backend/tokyo_page.html"><i class="fa-solid fa-bed"></i> 숙소</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button id="btn" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="test">
+    <p id="test4"><span style="font-size: 1.5625rem;"><strong>34,800원 ~</strong></span><small style="color: gray;">
+        부터</small>
+    </p>
+    <div><button id="test2">티켓 선택</button></div>
+    <div><button id="test3"><i class="fa-regular fa-heart"></i> 위시리스트 담기</button></div>
+    <div style="font-size: 0.875rem; margin: 0.4375rem; color: gray;"><small>
+        <center>106명이 이 상품을 <br>위시리스트에 담았습니다.</center>
+      </small></div>
+  </div>
+  <div id="main_div">
+    <center>
+      <h1><strong>스카이트리 & 스미다 수족관 입장권</strong></h1>
+    </center>
+    <hr>
+    <p><i class="fa-solid fa-bolt"></i><strong> 즉시확정</strong> 구매 즉시 예약 확정 (일부 상품 이용일 추가 예약 필요)</p>
+    <hr>
+    <p><i class="fa-solid fa-print"></i> 모바일 또는 프린트 바우처</p>
+    <hr>
+    <div id="wrapper">
+      <img class="box1" src="img/skytree1.jpg" alt="">
+      <img class="box2" src="img/skytree2.jpg" alt="">
+      <img class="box2" src="img/skytree3.jpg" alt="">
+      <div class="image-container">
+        <img class="box3" src="img/skytree4.jpg" alt="">
+        <div class="overlay">
+          <p class="overlay-text">+4</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- 일정선택 -->
+    <h3 style="margin-top: 3.125rem; margin-bottom: 0rem;"><strong>🗓 일정 선택</strong></h3>
+    <br>
+    <div id="div1">
+      <b>
+        <p>날짜를 선택해주세요.</p>
+      </b>
+      <b>
+        <p>옵션을 선택해주세요.</p>
+      </b>
+      <input id="date" type="date" id="pick" name="pick">
+      <select name="person" id="person">
+        <option value="" selected disabled hidden>인원을 선택해주세요</option>
+        <option value="1">덴보테크(350m), 덴보회랑(450m) 세트권 | 성인 (만 18세 이상)</option>
+        <option value="2">덴보테크(350m), 덴보회랑(450m) 세트권 | 고등학생 (만15-17세)</option>
+        <option value="3">덴보테크(350m), 덴보회랑(450m) 세트권 | 중학생 (만12-14세)</option>
+        <option value="4">덴보테크(350m), 덴보회랑(450m) 세트권 | 초등학생 (만6-11세)</option>
+      </select>
+    </div>
+
+    <!-- 인원선택 -->
+    <h3 style="margin-top: 3.125rem; margin-bottom: 0rem;"><strong>👤 인원 선택</strong></h3><br>
+    <div id="div2">
+      <b>
+        <p>성인</p>
+      </b>
+      <b>
+        <p>어린이</p>
+      </b>
+      <select name="person" id="person">
+        <option value="" selected disabled hidden>인원을 선택해주세요</option>
+        <option value="1">1명</option>
+        <option value="2">2명</option>
+        <option value="3">3명</option>
+        <option value="4">4명</option>
+      </select>
+
+      <select name="person" id="person">
+        <option value="" selected disabled hidden>인원을 선택해주세요</option>
+        <option value="1">1명</option>
+        <option value="2">2명</option>
+        <option value="3">3명</option>
+        <option value="4">4명</option>
+      </select>
+    </div>
+    <br>
+
+    <h3 style="margin-top: 3.125rem;"><strong>🗼 도쿄 스카이트리 전망대 입장권과 도쿄 소라마치에 위치한 <br>스미다 수족관 입장권이 세트로 되어있는 스페셜한 티켓입니다.</strong>
+    </h3>
+
+    <p style="margin-top: 1.875rem;">[이 티켓의 매력 포인트!] <br>
+      • 스카이트리 전망대에 올라 끝없이 펼쳐지는 전망을 감상해 보세요. <br>
+      • 스미다 수족광네 방문하여 다양한 수중 생물들을 만나보세요. <br>
+      <br>
+      도쿄 스카이트리 전망대 입장권과 도쿄 소라마치에 위치한 스미다 수족관 입장권이 세트로 되어있는 스페셜한 티켓입니다. <br>
+      예약시 선택하는 날짜와 시간은 도쿄 스카이트리 입장 날짜와 시간입니다. <br>
+      <br>
+      스미다 수족관 입장권은 도쿄 스카이트리 4층 티켓 카운터에서 전망대 입장권과 같이 교환해주시기 바랍니다. <br>도쿄 스카이트리 전망대 입장 전 스미다 수족관의 이용은 이동 동선 상 불가하므로 양해 부탁드립니다.
+      <br>
+      <br>
+      [예약 전 확인해 주세요!] <br>
+      • 1/1~1/5, 1/8, 2/12, 2/23에는 휴일 요금이 적용됩니다. <br>
+      • 공식 홈페이지 : https://www.tokyo-skytree.jp/kr/
+    </p>
+    <hr>
+    <h3><strong>상품 정보</strong></h3>
+    <h4><small>포함 사항</small></h4>
+    <p>1. 덴보테크(350m) 입장권</p>
+    <p>2. 스미다 수족관 입장권</p>
+    <p>3 .덴보회랑(450m) 입장권 (옵션 선택 시)</p>
+    <br>
+  </div>
+</body>
+<footer class="footer">
+  <secton class="footer-inner">
+    <span class="CustomerCenter-module__container ">
+      <p>상호명 (주) |커피트립 대표 이홍길 | 개인정보보호책임자 권아진 | 사업자등록번호 209-12-12345 사업자정보확인 |</p>
+      <p>| 통신판매업신고번호 2024-부산남구-0510|관광사업등록번호: 제2019-3호</p>
+      <p>주소 부산광역시 남구 대연동 부경대학교 창의관 3층|이메일 dustkscjswo@naver.com|마케팅 문의 |duddjcjswo@naver.com</p>
+      <p>제휴 문의 travel@naver.com</p>
+    </span>
+    <span class="CustomerCenter-module__container2">
+      <p>자사는 부경대학교 디지털스마트부산 아카데미 4기입니다</p>
+      <p>여행보증보험:1.5억원/기획여행보증:2억원</p>
+      <p>여행가조는 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품, 거래정보 및 거래에 대한 책임을 지지않습니다.</p>
+      <p>부득이한 사정에 의해 확정된 여행일정이 변경되는 경우 여행자의 사전 동의를 받습니다.
+      </p>
+    </span>
+  </secton>
+</footer>
+
+</html>

@@ -1,0 +1,10 @@
+#main_div{
+  width: 62.5rem;
+  margin: auto;
+}
+
+.card {
+  margin-top: 1.25rem;
+  margin-right: .625rem;
+  margin-bottom: 3.125rem;
+}
